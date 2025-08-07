@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Meow KPIs & Insights</title>
+    <style>
+      /* Basic reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: #fdf6e3;
+        color: #333;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        color: #ff4500;
+        animation: bounce 1s infinite alternate;
+      }
+
+      @keyframes bounce {
+        to {
+          transform: translateY(-10px);
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background: #ffd700;
+        border-radius: 1.5rem;
+        transition: background 0.3s;
+      }
+
+      nav a:hover {
+        background: #ff8c00;
+      }
+
+      section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        padding: 1rem;
+        text-align: center;
+        border: 2px dashed #ccc;
+        border-radius: 1rem;
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Meow Meow Engineering KPIs & Insights 🐱📊</h1>
+      <p>Welcome to the fun side of metrics!</p>
+    </header>
+    <nav>
+      <a href="#cats">Cats</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#icecream">Ice Cream</a>
+      <a href="#memecoins">Meme Coins</a>
+    </nav>
+
+    <section id="cats">
+      <h2>🐈 Cats of the Month</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://placekitten.com/200/200" alt="Kitten 1" />
+          <p>Fluffy - Deployment Success Rate: 98%</p>
+        </div>
+        <div class="card">
+          <img src="https://placekitten.com/201/200" alt="Kitten 2" />
+          <p>Mittens - MTTR: 1.2 hrs</p>
+        </div>
+        <div class="card">
+          <img src="https://placekitten.com/200/201" alt="Kitten 3" />
+          <p>Whiskers - Uptime: 99.9%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pizza">
+      <h2>🍕 Pizza Efficiency</h2>
+      <p>
+        On average, we celebrate <strong>3 successful releases</strong> with
+        pizza per sprint.
+      </p>
+      <ul>
+        <li>Pizza/Cat Ratio: 2 🍕 per 😺</li>
+        <li>Average Slice Happiness: 4.8/5</li>
+      </ul>
+    </section>
+
+    <section id="icecream">
+      <h2>🍨 Ice Cream Insights</h2>
+      <p>
+        We track ice cream consumption vs. code commits. More 🍦 often means
+        more commits!
+      </p>
+      <div class="cards">
+        <div class="card">Week 27: 120 commits / 10 tubs</div>
+        <div class="card">Week 28: 95 commits / 8 tubs</div>
+        <div class="card">Week 29: 130 commits / 12 tubs</div>
+      </div>
+    </section>
+
+    <section id="memecoins">
+      <h2>💰 Meme Coin Market</h2>
+      <p>Top 3 Meme Coins held by the team:</p>
+      <ol>
+        <li>CatCoin: 1,000,000 🐱</li>
+        <li>PizzaCoin: 5,000 🍕</li>
+        <li>IceCoin: 2,500 🍨</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Meow Meow Team. All Fun Reserved!</p>
+    </footer>
+  </body>
+</html>
